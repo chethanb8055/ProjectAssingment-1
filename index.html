@@ -10,44 +10,52 @@
       crossorigin="anonymous"
     />
     <link rel="icon" type="image/png" href="components/logo.png" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
 
     <title>IPexcel</title>
   </head>
   <body>
-    <nav>
+    <nav class="container-fluid p-0 m-0">
       <!-- Top- Nav bar -->
       <div
-        class="d-flex border-2 border justify-content-evenly align-content-center text-white bg-black p-2 d-lg-block d-sm-none"
+        class="row justify-content-evenly align-items-center p-2 bg-black text-white d-md-block d-none d-md-flex"
       >
-        <ul class="my-auto">
-          <li>
-            <i class="bi bi-geo-alt-fill m-1"></i>201 Spear Street, Suite 1100,
-            San Francisco, CA 94105
-          </li>
-        </ul>
-        <div class="d-flex justify-content-evenly align-content-center">
-          <div class="border-end border-2 pe-4 text-center border-white mx-4">
-            <i class="bi bi-telegram bg-d fs-4 me-1 align-bottom"></i
-            ><span class="align-top p-1">contact@ipexcel.com</span>
-          </div>
-          <div class="me-2">
-            <i class="bi bi-linkedin fs-5 m-3"></i>
-            <i class="bi bi-youtube fs-4 mx-auto"></i>
-          </div>
+        <div class="col-md-4">
+          <h1 class="fs-6">
+            <i class="bi bi-geo-alt-fill px-2 fs-4"></i
+            ><span class="fw-normal"
+              >201 Spear Street, Suite 1100, San Francisco, CA 94105</span
+            >
+          </h1>
+        </div>
+        <div class="col-md-4 d-flex justify-content-evenly align-items-center">
+          <h1
+            class="fs-6 pe-4 d-flex justify-content-evenly align-items-center"
+          >
+            <i class="bi bi-telegram px-2 fs-4"></i
+            ><span class="fw-normal">contact@ipexcel.com</span>
+          </h1>
+          <h1
+            class="fs-6 ps-4 d-flex justify-content-around align-items-center border-start border-2"
+          >
+            <div><i class="bi bi-linkedin fs-4 px-2"></i></div>
+            <div><i class="bi bi-youtube fs-4 px-2"></i></div>
+          </h1>
         </div>
       </div>
       <!-- Top- Nav bar end -->
       <!-- battom nav bar start -->
-      <div class="d-flex justify-content-around align-item-center">
-        <div class="d-flex flex-column p-0" style="width: 100px">
+      <div class="row justify-content-around align-item-center">
+        <div class="col-4 p-2 me-5" style="width: 100px">
           <img src="components/logo.png" class="img-fluid" alt="logo" />
         </div>
 
-        <div class="d-flex justify-content-center align-items-center">
-          <h1 class="text-center fs-5 color-blue">
+        <div
+          class="d-flex justify-content-center ms-4 p-0 col-4 align-items-center"
+        >
+          <h1 class="text-center fs-5 float-end color-blue pe-0">
             <i class="bi bi-telephone-fill color-bluw"></i
-            ><span class="m-1">+1-800-884-0542</span>
+            ><span class="m-2">+1-800-884-0542</span>
           </h1>
         </div>
       </div>
@@ -55,58 +63,73 @@
     </nav>
 
     <!--info and Form Section-->
-    <div>
+    <div
+      class="nav-img p-2 text-white row justify-content-evenly align-items-center"
+    >
       <!-- info part -->
-      <div>
-        <h1>We`re Truested Experts in USPTO Patent illustration</h1>
-        <h2>Ensuring your Ideas are Visually Patent-ready</h2>
-        <p>
+      <div class="col-md-4 px-5 px-md-0">
+        <h1 class="fw-bolder fs-2">
+          We`re Truested Experts in USPTO Patent illustration
+        </h1>
+        <h2 class="color-blue fw-bold">
+          Ensuring your Ideas are Visually Patent-ready
+        </h2>
+        <p class="">
           with an unwavering commitment to accuracy and attention to detail, we
           transform your concepts into tangible assets,ensuring they stand out
           amidst the sea of patents
         </p>
       </div>
       <!-- form part -->
-      <div>
-        <form action="submit.php" method="POST">
-          <h1>GET IN TOUCH</h1>
-          <div>
+      <div class="col-md-4 p-2 text-center">
+        <form
+          action="submit.php"
+          class="bg-blue p-3 mx-auto"
+          method="POST"
+          style="width: 18rem"
+        >
+          <h1 class="fs-3 fw-bold">GET IN TOUCH</h1>
+          <div class="m-2">
             <input
               type="text"
               id="fullname"
               name="fullname"
+              class="form-control"
               placeholder="Full Name"
               required
             />
           </div>
-          <div>
+          <div class="m-2">
             <input
               type="text"
               id="companyname"
+              class="form-control"
               name="companyname"
               placeholder="Company Name"
             />
           </div>
-          <div>
+          <div class="m-2">
             <input
               type="email"
               id="email"
               name="email"
+              class="form-control"
               placeholder="Email Id"
               required
             />
           </div>
-          <div>
+          <div class="m-2">
             <input
               type="tel"
               id="phone"
               name="phone"
+              class="form-control"
               placeholder="Mobile Number"
               required
             />
           </div>
-          <div>
-            <select id="sheets" name="sheets" required>
+          <div class="m-2">
+            <select id="sheets" class="form-control" name="sheets" required>
               <option value="" disabled selected>
                 Select Number of Sheets
               </option>
@@ -115,19 +138,65 @@
               <option value="30">30 Sheets</option>
             </select>
           </div>
-          <div>
+          <div class="m-2">
             <textarea
               id="message"
               name="message"
               rows="4"
+              class="form-control"
               placeholder="Message"
             ></textarea>
           </div>
-          <div>
-            <input type="submit" value="Submit" />
+          <div class="m-2">
+            <button type="button" class="btn btn-dark w-100">SUBMIT</button>
           </div>
         </form>
       </div>
+    </div>
+    <!--End --info and Form Section-->
+    <!-- info-text -->
+    <div class="row text-center justify-content-center m-3">
+      <div class="col-8">
+        <p>
+          At IPExcel, we understand that a picture is worth a thousand words,
+          especially in the world of patents. Our Patent Drawing Service is
+          designed to help inventors, entrepreneurs, and businesses bring their
+          ideas to life through professional, accurate, and compliant patent
+          drawings.
+        </p>
+      </div>
+    </div>
+    <!-- Ent info-text -->
+
+    <!-- About Section -->
+
+    <div class="row">
+      <h1 class="color-blue">Why Choose IPExcel</h1>
+      <ul class="">
+        <li>
+          <strong>USPTO Expertise:</strong> Our experienced illustrators are
+          well-versed in USPTO guidelines and drafting conventions, ensuring
+          your drawings meet all the necessary requirements.
+        </li>
+        <li>
+          <strong>Accuracy & Speed:</strong> We combine meticulous attention to
+          detail with efficient turnaround times, getting your drawings
+          completed swiftly without compromising quality.
+        </li>
+        <li>
+          <strong>Competitive Rates:</strong> We offer competitive pricing for
+          our services, providing cost-effective solutions for law firms and
+          inventors.
+        </li>
+        <li>
+          <strong>Seamless Collaboration:</strong> We work closely with you
+          throughout the process, ensuring clear communication and revisions to
+          meet your exact needs.
+        </li>
+      </ul>
+      <ol class="col-md-4">
+        <li>Chethan</li>
+      </ol>
     </div>
 
     <script
