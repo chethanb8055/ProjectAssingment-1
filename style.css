@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 .bg-blue {
@@ -35,3 +36,59 @@
 .bg-brawn {
   background-color: rgb(208, 210, 212);
 }
+
+.center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.197);
+}
+=======
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+.bg-blue {
+  background-color: #00adee;
+}
+
+.color-blue {
+  color: #00adee;
+}
+
+.bg-black {
+  background-color: #232323;
+}
+
+.nav-img {
+  background: url("./components/slider_1_mobile.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  /* background: #000; */
+}
+
+/* Custom styles for the unordered list */
+.custom-list {
+  list-style-type: disc !important; /* Use disc bullets */
+  padding-left: 20px !important; /* Add some left padding */
+}
+
+/* Custom styles for list items */
+.custom-list li {
+  margin-bottom: 10px !important; /* Add some bottom margin between list items */
+}
+
+.bg-brawn {
+  background-color: rgb(208, 210, 212);
+}
+>>>>>>> d1d0f2c2fde71434579aaac728aa3c89ba09e347
