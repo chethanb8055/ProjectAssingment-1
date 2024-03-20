@@ -1,5 +1,9 @@
-<<<<<<< HEAD
+
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body {
+  overflow-x: hidden;
+}
 
 .bg-blue {
   background-color: #00adee;
@@ -91,4 +95,4 @@
 .bg-brawn {
   background-color: rgb(208, 210, 212);
 }
->>>>>>> d1d0f2c2fde71434579aaac728aa3c89ba09e347
+
